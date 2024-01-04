@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        double a,b,c ;
+        double a,b,c,u,alan;
 
         Scanner inp = new Scanner(System.in);
 
@@ -13,9 +13,17 @@ public class Main {
         System.out.println("2.kenar uzunluğunu giriniz");
         b= inp.nextInt();
 
-        c = Math.sqrt(a*a + b*b);
+        System.out.println("3.kenar uzunluğunu giriniz");
+        c= inp.nextInt();
 
-        System.out.println("hipotenüs uzunluğu :  "+c);
+        u=(a+b+c)/2;
+        System.out.println("üçgenin çevre uzunluğu :   "+ u*2);
+
+        alan=u*u;
+        System.out.println("üçgenin alanı :  "+ alan);
+
+
+
 
 
 
